@@ -1,0 +1,2 @@
+nav_msgs/GridCells grid_cells
+std_msgs/Int8MultiArray objects_id

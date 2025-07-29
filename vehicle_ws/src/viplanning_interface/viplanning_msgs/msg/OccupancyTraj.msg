@@ -1,0 +1,2 @@
+viplanning_msgs/GridCellsWithId[] occupancy_map_t
+autoware_auto_planning_msgs/Trajectory trajectory_t

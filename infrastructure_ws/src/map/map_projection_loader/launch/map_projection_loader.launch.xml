@@ -1,0 +1,9 @@
+<launch>
+  <arg name="map_projector_info_path" description="Path to the yaml file" default="/home/wodone/map/map_projector_info.yaml"/>
+  <arg name="lanelet2_map_path" description="Path to the lanelet2 map file" default="/home/wodone/map/lanelet2_map.osm"/>
+
+  <node pkg="map_projection_loader" exec="map_projection_loader" name="map_projection_loader" output="screen">
+    <param name="map_projector_info_path" value="/home/wodone/map/map_projector_info.yaml"/>
+    <param name="lanelet2_map_path" value="/home/wodone/map/lanelet2_map.osm"/>
+  </node>
+</launch>
