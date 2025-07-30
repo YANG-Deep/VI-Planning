@@ -33,14 +33,14 @@ Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-
   Use the `infrastructure_ws` ROS 2 workspace when deploying VI-Planning modules on infrastructure.
 
 1. **Prepare Lidar Raw Data**
-    - Provide Lidar point cloud data as raw data, either generated directly by a Lidar driver or from collected point cloud data packets.
-    - Ensure the frequency of the raw data is controlled at **10Hz**.
+    - Provide Lidar point cloud data as raw data, either generated directly by a Lidar driver or from collected point cloud rosbags.
+    - Ensure the frequency of the raw data is controlled at **10 Hz**.
 2. **Publish Raw Data**
     - Publish the raw data as a ROS2 topic with:
       - Topic name: `/sensing/lidar/pointcloud`
       - `frame_id`: `base_link`
-3. **Set Map-Infrastructure Transformation**
-    - Determine the relative positional relationship (translation and rotation) between your infrastructure and the map origin.
+3. **Set Map2Infrastructure Transformation**
+    - Determine the relative positional relationship (translation and rotation) between your infrastructure and the map origin point. We suggest using the ICP algorithm.
     - Modify the corresponding parameters in `src/map/map_tf_generator/src/vector_map_tf_generator_node.cpp`.
 4. **Install Dependencies and Compile Source Code**
     - Install the relevant dependencies as described in the Artifact Appendix of the paper.
@@ -54,7 +54,7 @@ Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-
       - Encode occupancy maps and generate occupancy data for the vehicle
 6. **Transmit Occupancy Data**
     - Due to differences in RSU devices, only the transmission code for the RSU device used in our experiment is provided.
-    - If you need to send occupancy data to the vehicle, develop your own program to subscribe to the occupancy data generated in the previous step and send it.
+    - If you need to send occupancy data to the vehicle, please develop your own program to subscribe to the occupancy data generated in the previous step and send it.
     - The encoded occupancy data format is a binary string.
 
 </details>
