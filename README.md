@@ -5,21 +5,22 @@
 Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-and-play, infrastructure-assisted autonomous driving system. The core idea of VI-Planning is to leverage the historical observations of infrastructure to generate scene-level future occupancy grid maps. These occupancy grid maps can seamlessly integrate with most autonomous driving frameworks (both modularand end-to-end) without requiring architectural changes, enabling direct optimization of planning outcomes. This project provides a guidance for deploying VI-Planning on both infrastructure and vehicle using ROS 2 workspaces. 
 
 <div align="center">
-  
+
   <table>
     <tr>
       <td align="center">
-        <b>Infrastructure Effect</b><br>
-        <img src="docs/gif/infrastructure_demo.gif" width="380" alt="Infrastructure Effect GIF"/>
+        <b>Future Occupancy Generation in Infrastructure</b><br>
+        <video src="assets/infrastructure_demo.mp4" width="380" controls loop muted playsinline></video>
       </td>
       <td align="center">
-        <b>Vehicle Effect</b><br>
-        <img src="docs/gif/vehicle_demo.gif" width="380" alt="Vehicle Effect GIF"/>
+        <b>Planning Optimization in Vehicle</b><br>
+        <video src="assets/vehicle_demo.mp4" width="380" controls loop muted playsinline></video>
       </td>
     </tr>
   </table>
-  
+
 </div>
+
 
 ---
 
