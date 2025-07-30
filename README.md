@@ -10,11 +10,11 @@ Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-
     <tr>
       <td align="center">
         <b>Future Occupancy Generation in Infrastructure</b><br>
-        <video src="asset/infrastructure.mp4" width="380" controls loop muted playsinline></video>
+        <video src="/asset/infrastructure.mp4" width="380" controls loop muted playsinline></video>
       </td>
       <td align="center">
         <b>Planning Optimization in Vehicle</b><br>
-        <video src="asset/vehicle.mp4" width="380" controls loop muted playsinline></video>
+        <video src="/asset/vehicle.mp4" width="380" controls loop muted playsinline></video>
       </td>
     </tr>
   </table>
