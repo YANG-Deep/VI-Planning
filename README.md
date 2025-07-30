@@ -27,11 +27,11 @@ Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-
 
 ### Workspace Selection
 
-- **Infrastructure Deployment:**  
-  Use the `infrastructure_ws` ROS 2 workspace when deploying VI-Planning modules on infrastructure.
-
  <details>
 <summary><strong>Infrastructure Deployment Workflow</strong> (Click to expand/collapse)</summary>
+
+- **Infrastructure Deployment:**  
+  Use the `infrastructure_ws` ROS 2 workspace when deploying VI-Planning modules on infrastructure.
 
 1. **Prepare Lidar Raw Data**
     - Provide Lidar point cloud data as raw data, either generated directly by a Lidar driver or from collected point cloud data packets.
