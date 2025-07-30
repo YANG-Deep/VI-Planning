@@ -64,7 +64,7 @@ Use the `infrastructure_ws` ROS 2 workspace when deploying VI-Planning modules o
  <details>
 <summary><strong>Vehicle Deployment Workflow</strong> (Click to expand/collapse)</summary>
 
-Use the `vehicle_ws` ROS 2 workspace for deployment on vehicles.
+Use the `vehicle_ws` ROS 2 workspace for deployment  VI-Planning modules on vehicles.
 
 1. **Receive Occupancy Data**
     - Confirm that you have received the occupancy data sent by the infrastructure.
