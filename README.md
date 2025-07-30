@@ -88,7 +88,6 @@ Use the `vehicle_ws` ROS 2 workspace for deployment  VI-Planning modules on vehi
 
 A real-world dataset for a pedestrian dart-out scenario is available, including:
 
-
 - **Infrastructure raw sensor data:**  
   - Including: raw point cloud data
 - **Vehicle raw sensor data:**  
@@ -100,7 +99,7 @@ A real-world dataset for a pedestrian dart-out scenario is available, including:
   - Required file: `lanelet2_map.osm`
   - Draw your vector map based on the PCD map using Autoware's online map editor ([see tool](xxx.com)).
 
-> [Download the dataset here](insert link here)
+[Download the dataset here](insert link here)
 
 > **Note:**  
 > The map loading module uses [autoware.universe](https://github.com/autowarefoundation/autoware.universe).  
