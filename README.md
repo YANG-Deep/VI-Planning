@@ -94,7 +94,7 @@ A real-world dataset for a pedestrian dart-out scenario is available, including:
   - Including: raw point cloud data, ego pose, original trajectory
 - **PCD Map:**  
   - Required file: `pointcloud_map.pcd`
-  - Prepare your custom PCD map if conducting your own experiments.
+  - Prepare your custom PCD map if conducting your own experiments. We suggest using the LIO-SAM algorithm to construct your own PCD Map.
 - **Vector Map:**  
   - Required file: `lanelet2_map.osm`
   - Draw your vector map based on the PCD map using Autoware's online map editor ([see tool](xxx.com)).
