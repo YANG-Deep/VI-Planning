@@ -39,7 +39,7 @@ Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-
     - Publish the raw data as a ROS2 topic with:
       - Topic name: `/sensing/lidar/pointcloud`
       - `frame_id`: `base_link`
-3. **Set Map2Infrastructure Transformation**
+3. **Set Infrastructure2Map Transformation**
     - Determine the relative positional relationship (translation and rotation) between your infrastructure and the map origin point. We suggest using the ICP algorithm.
     - Modify the corresponding parameters in `src/map/map_tf_generator/src/vector_map_tf_generator_node.cpp`.
 4. **Install Dependencies and Compile Source Code**
