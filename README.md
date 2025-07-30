@@ -57,7 +57,7 @@ The `map` folder contains all mapping resources necessary for experiments.
 
 ## Data Recording Guidelines
 
-To facilitate experiments and benchmarking, record the following topics:
+If you want to run VI-Planning on your own scenario, please record the following topic.:
 
 - **On Infrastructure:**  
   - Lidar point cloud data  
