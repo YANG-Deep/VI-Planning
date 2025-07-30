@@ -88,9 +88,6 @@ Use the `vehicle_ws` ROS 2 workspace for deployment  VI-Planning modules on vehi
 
 A real-world dataset for a pedestrian dart-out scenario is available, including:
 
-- Infrastructure and vehicle raw sensor data
-- Vectorized scenario map
-- High-definition point cloud map
 
 - **Infrastructure raw sensor data:**  
   - Including: raw point cloud data
