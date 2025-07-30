@@ -84,29 +84,37 @@ Use the `vehicle_ws` ROS 2 workspace for deployment  VI-Planning modules on vehi
 
 ---
 
-## Maps
+## Example Dataset
 
-The `map` folder contains all mapping resources necessary for experiments.
+A real-world dataset for a pedestrian dart-out scenario is available, including:
 
+- Infrastructure and vehicle raw sensor data
+- Vectorized scenario map
+- High-definition point cloud map
+
+- **Infrastructure raw sensor data:**  
+  - Including: raw point cloud data
+- **Vehicle raw sensor data:**  
+  - Including: raw point cloud data, ego pose, original trajectory
 - **PCD Map:**  
   - Required file: `pointcloud_map.pcd`
   - Prepare your custom PCD map if conducting your own experiments.
 - **Vector Map:**  
   - Required file: `lanelet2_map.osm`
   - Draw your vector map based on the PCD map using Autoware's online map editor ([see tool](xxx.com)).
-- **Map Projector Info:**  
-  - File: `map_projector_info.yaml`
-  - No changes needed for this file.
+
+> [Download the dataset here](insert link here)
 
 > **Note:**  
 > The map loading module uses [autoware.universe](https://github.com/autowarefoundation/autoware.universe).  
 > Ensure your files are named exactly as specified above.
 
+
 ---
 
 ## Data Recording Guidelines
 
-If you want to run VI-Planning on your own scenario, please record the following topic.:
+If you want to run VI-Planning on your own scenario, please record the following topic:
 
 - **On Infrastructure:**  
   - Lidar point cloud data  
@@ -116,17 +124,6 @@ If you want to run VI-Planning on your own scenario, please record the following
     - Topic: `/planning/scenario_planning/trajectory`
   - Self-pose information  
     - Topic: `/localization/pose_estimator/pose`
-
----
-
-## Example Dataset
-
-A real-world dataset for a pedestrian dart-out scenario is available, including:
-
-- Infrastructure and vehicle raw sensor data
-- Vectorized scenario map
-
-> [Download the dataset here](insert link here)
 
 ---
 
