@@ -66,30 +66,16 @@ Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-
 
     Use the `vehicle_ws` ROS 2 workspace for deployment on vehicles.
 
-1. **Prepare Lidar Raw Data**
-    - Provide Lidar point cloud data as raw data, either generated directly by a Lidar driver or from collected point cloud rosbags.
-    - Ensure the frequency of the raw data is controlled at **10 Hz**.
-2. **Publish Raw Data**
-    - Publish the raw data as a ROS2 topic with:
-      - Topic name: `/sensing/lidar/pointcloud`
-      - `frame_id`: `base_link`
-3. **Set Infrastructure2Map Transformation**
-    - Determine the relative positional relationship (translation and rotation) between your infrastructure and the map origin point. We suggest using the ICP algorithm.
-    - Modify the corresponding parameters in `src/map/map_tf_generator/src/vector_map_tf_generator_node.cpp`.
-4. **Install Dependencies and Compile Source Code**
+1. **Receive Occupancy Data**
+    - Confirm that you have received the occupancy data sent by the infrastructure.
+    - Convert the received occupancy data into a ROS 2 topic for publication.
+    - The published topic should be named `/occupancy_map_bin` and use the `std_msgs::msg::String` format.
+2. **Install Dependencies and Compile Source Code**
     - Install the relevant dependencies as described in the Artifact Appendix of the paper.
     - Use `colcon build` to compile the source code.
-5. **Start the System**
-    - Run `start.sh` in the `bash` folder to launch the system.
-    - The system will:
-      - Take raw data as input
-      - Generate detection, tracking, and prediction results
-      - Generate occupancy maps (viewable in `rviz2`)
-      - Encode occupancy maps and generate occupancy data for the vehicle
-6. **Transmit Occupancy Data**
-    - Due to differences in RSU devices, only the transmission code for the RSU device used in our experiment is provided.
-    - If you need to send occupancy data to the vehicle, please develop your own program to subscribe to the occupancy data generated in the previous step and send it.
-    - The encoded occupancy data format is a binary string.
+3. **Trajectory Planning and System Launch**
+    - Use the autoware.universe autonomous driving system to plan the trajectory.
+    - Run the `start.sh` script in the `bash` folder.
 
 </details>
 
