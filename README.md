@@ -21,7 +21,7 @@ Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-
 
 </div>
 
-
+> We also provide the demonstration video of VI-Planning in the scenario of a pedestrian dart-out scenario in the `asset` folder.
 ---
 
 ## Getting Started
