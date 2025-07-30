@@ -20,6 +20,7 @@ Welcome to **VI-Planning**! This project provides a framework for deploying plan
   </table>
   
 </div>
+
 ---
 
 ## Getting Started
