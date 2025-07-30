@@ -97,7 +97,7 @@ A real-world dataset for a pedestrian dart-out scenario is available, including:
   - Prepare your custom PCD map if conducting your own experiments. We suggest using the LIO-SAM algorithm to construct your own PCD Map.
 - **Vector Map:**  
   - Required file: `lanelet2_map.osm`
-  - Draw your vector map based on the PCD map using Autoware's online map editor ([see tool](xxx.com)).
+  - Draw your vector map based on the PCD map using Autoware's online map editor ([see tool](https://tools.tier4.jp/feature/vector_map_builder_ll2/)).
 
 [Download the dataset here](insert link here)
 
