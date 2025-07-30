@@ -4,6 +4,22 @@
 
 Welcome to **VI-Planning**! This project provides a framework for deploying planning modules on both infrastructure and vehicle platforms using ROS 2 workspaces. It also includes resources and guidelines for conducting experiments with real-world datasets and custom maps.
 
+<div align="center">
+  
+  <table>
+    <tr>
+      <td align="center">
+        <b>Infrastructure Effect</b><br>
+        <img src="docs/gif/infrastructure_demo.gif" width="380" alt="Infrastructure Effect GIF"/>
+      </td>
+      <td align="center">
+        <b>Vehicle Effect</b><br>
+        <img src="docs/gif/vehicle_demo.gif" width="380" alt="Vehicle Effect GIF"/>
+      </td>
+    </tr>
+  </table>
+  
+</div>
 ---
 
 ## Getting Started
