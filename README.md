@@ -97,11 +97,11 @@ A real-world dataset for a pedestrian dart-out scenario is available, including:
 - **PCD Map:**  
   - Required file: `pointcloud_map.pcd`
   - Prepare your custom PCD map if conducting your own experiments. We suggest using the LIO-SAM algorithm to construct your own PCD Map.
-- **Infrastructure2Map  Transformation:**
-  - This is used to ensure that the vehicle and the infrastructure are in the same coordinate system.
 - **Vector Map:**  
   - Required file: `lanelet2_map.osm`
   - Draw your vector map based on the PCD map using Autoware's online map editor ([see tool](https://tools.tier4.jp/feature/vector_map_builder_ll2/)).
+- **Infrastructure2Map  Transformation:**
+  - This is used to ensure that the vehicle and the infrastructure are in the same coordinate system.
 
 [Download the dataset here](insert link here)
 
