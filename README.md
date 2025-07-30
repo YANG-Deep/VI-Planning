@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-and-play, infrastructure-assisted autonomous driving system. The core idea of VI-Planning is to leverage the historical observations of infrastructure to generate scene-level future occupancy grid maps. These occupancy grid maps can seamlessly integrate with most autonomous driving frameworks (both modularand end-to-end) without requiring architectural changes, enabling direct optimization of planning outcomes. This project provides a guidance for deploying VI-Planning on both infrastructure and vehicle using ROS 2 workspaces. 
+Welcome to **VI-Planning**! VI-Planning is the first planning-oriented and plug-and-play, infrastructure-assisted autonomous driving system. The core idea of VI-Planning is to leverage the historical observations of infrastructure to generate scene-level future occupancy grid maps. These occupancy grid maps can seamlessly integrate with most autonomous driving frameworks (both modularand end-to-end) without requiring architectural changes, enabling direct optimization of planning results. This project provides a guidance for deploying VI-Planning on both infrastructure and vehicle using ROS 2 workspaces. 
 
 <div align="center">
 
@@ -100,6 +100,8 @@ A real-world dataset for a pedestrian dart-out scenario is available, including:
 - **Vector Map:**  
   - Required file: `lanelet2_map.osm`
   - Draw your vector map based on the PCD map using Autoware's online map editor ([see tool](https://tools.tier4.jp/feature/vector_map_builder_ll2/)).
+- **Infrastructure2Map  Transformation:**
+  - This is used to ensure that the vehicle and the infrastructure are in the same coordinate system.
 
 [Download the dataset here](insert link here)
 
